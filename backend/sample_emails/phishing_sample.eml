@@ -1,0 +1,47 @@
+Delivered-To: victim@realcompany.com
+Received: by 2002:a05:6512:1234:b0:5a1:abcd:ef01 with SMTP id x18csp1234567xyz;
+        Mon, 15 Sep 2026 03:14:22 -0700 (PDT)
+Received: from mail-relay.suspicious-host.ru (mail-relay.suspicious-host.ru. [185.220.101.47])
+        by mx.google.com with ESMTPS id a1b2c3d4e5f6.2026.09.15.03.14.20
+        for <victim@realcompany.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 15 Sep 2026 03:14:21 -0700 (PDT)
+Received: from internal-relay.freehostbox.net (unknown [45.142.212.61])
+        by mail-relay.suspicious-host.ru with SMTP id qwe123;
+        Mon, 15 Sep 2026 10:14:18 +0000
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of billing@realcompany-support.com does not designate 45.142.212.61 as permitted sender) smtp.mailfrom=billing@realcompany-support.com;
+       dkim=fail header.i=@realcompany.com;
+       dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=realcompany.com
+Received-SPF: fail (google.com: domain of billing@realcompany-support.com does not designate 45.142.212.61 as permitted sender) client-ip=45.142.212.61;
+From: "Accounts Payable - RealCompany" <billing@realcompany-support.com>
+Reply-To: finance-urgent@realcompany-payments.net
+Return-Path: <bounce@realcompany-support.com>
+To: victim@realcompany.com
+Subject: URGENT: Invoice #48213 Payment Overdue - Immediate Action Required
+Date: Mon, 15 Sep 2026 10:14:15 +0000
+Message-ID: <a1b2c3d4-e5f6-7890@realcompany-support.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Valued Employee,
+
+This is your FINAL NOTICE regarding Invoice #48213, which is now 15 days
+overdue. Failure to process this payment within 24 HOURS will result in
+suspension of vendor services and escalation to our legal department.
+
+To avoid service disruption, please verify your account and process payment
+immediately by clicking the secure link below:
+
+http://realcompany-secure-billing.xyz/invoice/verify?id=48213&token=9f8e7d6c
+
+If you have already made this payment, please disregard this notice and
+forward your payment confirmation receipt to finance-urgent@realcompany-payments.net
+within the next 2 hours to avoid automatic escalation.
+
+Do not reply to this email directly. For fastest resolution, use the link
+above or contact our urgent payments desk.
+
+Regards,
+Accounts Payable Department
+RealCompany Finance Team

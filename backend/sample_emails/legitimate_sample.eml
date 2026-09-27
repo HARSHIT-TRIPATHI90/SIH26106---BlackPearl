@@ -1,0 +1,41 @@
+Delivered-To: dev-team@acmecorp.com
+Received: by 2002:a05:6512:3456:b0:7c3:cdef:0123 with SMTP id z30csp3456789def;
+        Wed, 17 Sep 2026 11:05:44 -0700 (PDT)
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id m1n2o3p4q5r6.2026.09.17.11.05.42
+        for <dev-team@acmecorp.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 17 Sep 2026 11:05:43 -0700 (PDT)
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of jira-notifications@atlassian.net designates 209.85.220.41 as permitted sender) smtp.mailfrom=jira-notifications@atlassian.net;
+       dkim=pass header.i=@atlassian.net header.s=s2048 header.b=Xk9mPwLq;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=atlassian.net
+Received-SPF: pass (google.com: domain of jira-notifications@atlassian.net designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+From: "Jira Cloud Notifications" <jira-notifications@atlassian.net>
+To: dev-team@acmecorp.com
+Subject: [ACME-1437] Sprint 23 retrospective notes and action items
+Date: Wed, 17 Sep 2026 18:05:40 +0000
+Message-ID: <jira-1437-notification@atlassian.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Emily Torres updated ACME-1437:
+
+Sprint 23 Retrospective — Action Items
+--------------------------------------
+
+What went well:
+  - Deployment pipeline improvements reduced CI time by 35%
+  - Zero P1 incidents this sprint
+  - Customer onboarding flow redesign shipped on time
+
+Action items for Sprint 24:
+  1. [James] Set up staging environment monitoring dashboards (due Oct 1)
+  2. [Priya] Document the new API versioning strategy in Confluence
+  3. [Emily] Schedule cross-team sync with Platform team re: shared auth service
+  4. [All] Review and update on-call runbooks before Q4 freeze
+
+Notes: Full retro board is here: https://acmecorp.atlassian.net/wiki/spaces/ENG/pages/12345/Sprint+23+Retro
+
+--
+This message was sent by Atlassian Jira (v9.12.0#9120000-sha1:abc1234)

@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: blackpearl-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: blackpearl
+      POSTGRES_USER: blackpearl
+      POSTGRES_PASSWORD: blackpearl
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U blackpearl"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  neo4j:
+    image: neo4j:5.24
+    container_name: blackpearl-neo4j
+    restart: unless-stopped
+    environment:
+      NEO4J_AUTH: neo4j/blackpearl123
+      NEO4J_PLUGINS: '[]'
+    ports:
+      - "7474:7474"   # browser UI
+      - "7687:7687"   # bolt
+    volumes:
+      - neo4j_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:7474 || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pg_data:
+  neo4j_data:
