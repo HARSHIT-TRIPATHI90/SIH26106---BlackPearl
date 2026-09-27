@@ -1,7 +1,7 @@
 # 🏴‍☠️ Black Pearl — AI-Powered Email Threat Detection & Forensic Intelligence
 
-[![SIH 2026 Submission](https://shields.io)](https://github.com)
-[![Tech Stack](https://shields.io)](#)
+[![SIH 2026 Submission](https://img.shields.io/badge/SIH%202026-Submission-blue)](https://github.com/username/black-pearl)
+[![Tech Stack](https://img.shields.io/badge/Tech%20Stack-AI%20%7C%20Cybersecurity-purple)](#tech-stack)
 
 An advanced, end-to-end AI-powered cyber forensics platform designed for **Problem Statement SIH26106**. The platform automates email header parsing, cryptographic authentication checks, multi-hop network routing visualization, and Explainable AI (XAI) threat triage.
 
